@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <html>
+        <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multiple selection</title>
+        <style>
+            body{
+                background: #8A2387;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  
+                background: linear-gradient(to right, #F27121, #E94057, #8A2387); 
+                background-repeat: repeat;
+                height:100vh;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin:0;
+            }
+            #sp{
+            color:red;
+
+            }
+            form{
+                padding: 10px;
+                align-items: center;
+                justify-content: center;
+            }
+                    fieldset {
+            background-color: #eeeeee;
+            }
+
+            legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+            }
+
+           
+
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                margin-left: 0px;
+                
+            }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .navbar a:hover {
+                background: #ddd;
+                color: black;
+            }
+            
+            .fields{
+                margin: 10px;
+            }
+                
+
+        </style>
+    </head>    
+    <body>
+        
+    <h1 style="margin-top: 50px">We Provide the Best Solutions for Your Dream Car</h1>
+
+    <p style="font-weight: bold;">Please fill the below details to get best Car you Want!!!</p>
+
+    <form action="/action_page.php">
+    <div>
+        <div class="fields">
+        <input type="text" required  placeholder="Enter The Place where you want the Car"  >
+        <span id="sp">*</span>
+        </div>
+        <div class="fields">
+        <input type="text" required placeholder="Enter the Number of Cars">
+        <span id="sp">*</span>
+        </div>
+        <div class="fields">
+        <input type="mobile" required placeholder="enter your contact number">
+        <span id="sp">*</span>
+        </div>
+
+        <form>
+            
+            <label for="cars">Select a car:</label>
+            <select multiple>
+                <option value="kia">Kia</option>
+                <option value="tata">Tata</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Car response">
+            </form>
+
+
+
+    </div>
+    </form>
+    <form action="/action_page.php">
+        <fieldset>
+        <legend>User Information</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        
+        </fieldset>
+
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#Cars">News</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <input type="submit" value="Submit"> 
+    
+        
+
+    </body>
+    </html>
